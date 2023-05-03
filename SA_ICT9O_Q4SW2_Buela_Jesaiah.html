@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+</head>
+<body>
+	<p id="today"></p>
+
+
+	<script>
+     const date = new Date();
+     document.getElementById('today').innerHTML = date;
+	</script>
+
+	
+	<center><form>
+		Convert °F to °C <input type="text" id="num1"><br><br>
+		<button type="submit" onclick="Compute()">Convert</button>
+	</form></center>
+
+		<script type="text/javascript">
+			function Compute(){
+				let num1 = document.getElementById("num1").value;
+				let celsius = (num1 - 32) * 5/9;
+			
+				window.alert("The Value in °C is: " + celsius);
+			}
+		</script>
+
+</body>
+</html>
